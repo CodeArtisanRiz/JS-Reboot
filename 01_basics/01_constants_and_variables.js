@@ -8,7 +8,7 @@ let accountEmail = "connect@codeartisanriz.dev";
 var accountPassword = "12345";
 
 // Declare a global variable for account city (no keyword used)
-accountCity = "Jaipur";
+accountCity = "Silchar";
 
 // Declare a let variable for account state, but do not initialize it.
 let accountState;
@@ -17,7 +17,7 @@ let accountState;
 // accountId = 2 // not allowed.
 
 // Update the email address.
-accountEmail = "hc@hc.com";
+accountEmail = "dev@codeartisanriz.dev";
 
 // Update the password.
 accountPassword = "21212121";
