@@ -16,13 +16,13 @@ let isLoggedIn = false; // Boolean variable
 // Primitive datatypes: 
 // number => 2 to the power of 53
 // bigint => For large integers
-// String => "" or '' => Values within quotes
-// Boolean => true/false
+// string => "" or '' => Values within quotes
+// boolean => true/false
 // null => Standalone value indicating no value
 // undefined => Variable that has been declared but not yet assigned a value
 // symbol => Unique and immutable data type
 
-// Objects => Used to store collections of data and more complex entities
+// objects => Used to store collections of data and more complex entities
 
 // Log the type of various values to the console
 console.log(typeof "Riz"); // String
