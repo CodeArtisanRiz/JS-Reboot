@@ -1,4 +1,4 @@
-let score = "thirty three";
+let score = "Sixty Three";
 
 // Checking the type of the variable 'score'
 // console.log(typeof score);
@@ -74,7 +74,6 @@ let num1, num2, num3;
 num1 = num2 = num3 = 2 + 2; // Assigning the same value to multiple variables
 
 let gameCounter = 100;
-
 gameCounter++ // Incrementing the gameCounter using prefix
 ++gameCounter; // Incrementing the gameCounter using postfix
 console.log(gameCounter); // 102
