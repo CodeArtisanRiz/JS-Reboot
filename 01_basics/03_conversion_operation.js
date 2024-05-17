@@ -25,8 +25,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);
 
 // Conversion examples:
 // 1 => true; 0 => false
-// "" => false (empty string is falsy)
-// "hitesh" => true (non-empty string is truthy)
+// "" => false (empty string is falsye)
+// "riz" => true (non-empty string is truth)
 
 let someNumber = 33;
 
@@ -51,7 +51,7 @@ let negValue = -value; // Negating the value
 // console.log(2 % 3); // Modulus (remainder of 2 divided by 3)
 
 let str1 = "hello";
-let str2 = " hitesh";
+let str2 = " riz";
 
 let str3 = str1 + str2; // Concatenating two strings
 // console.log(str3);
@@ -74,8 +74,9 @@ let num1, num2, num3;
 num1 = num2 = num3 = 2 + 2; // Assigning the same value to multiple variables
 
 let gameCounter = 100;
-++gameCounter; // Incrementing the gameCounter
-console.log(gameCounter); // 101
+gameCounter++ // Incrementing the gameCounter using prefix
+++gameCounter; // Incrementing the gameCounter using postfix
+console.log(gameCounter); // 102
 
 // Link to study more about type conversion
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
