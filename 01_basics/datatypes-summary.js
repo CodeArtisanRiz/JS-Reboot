@@ -59,3 +59,27 @@ let myVariable = 42;       // myVariable is a number
 myVariable = "Hello";      // now myVariable is a string
 myVariable = true;         // now myVariable is a boolean
  
+
+// `````````````````````````````````````````````````````````
+// Stack(Primitive): [String, Number, Boolean, null, undefined, Symbol, BigInt]
+// These are stored directly on the stack, which is faster to access.
+
+let myYtName = "codewithriz"
+let anotherYtname = myYtName // takes the copy of myYtName
+anotherYtname = "techno3gamma" // updates the copy of data not the original.
+
+console.log(myYtName) 
+console.log(anotherYtname) 
+
+
+// Heap(Non-Primitive): [Array, Objects, Functions]
+// These are stored on the heap due to their potentially large size and complex structure.
+let userOne = {
+    email: "userOne@codeartisan.dev",
+    name: "Riz"
+}
+let userTwo = userOne // Updates the original data
+userOne.email ="connect@codeartisanriz.dev"
+
+console.log(userOne) // Updated email from userTwo
+console.log(userTwo)
