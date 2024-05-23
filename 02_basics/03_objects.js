@@ -1,6 +1,7 @@
-// Singleton and Object.create
+// Singleton
+// Object.create 
 
-// symbol
+// Symbol
 const mySym = Symbol("key1") // Creating a symbol for unique property keys
 
 // Object Literals
