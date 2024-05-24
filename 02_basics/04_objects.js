@@ -63,3 +63,45 @@ console.log(Object.entries(instaUser)) // Output: [ [ 'id', '123abc' ], [ 'name'
 // Checking if properties exist in instaUser
 console.log(instaUser.hasOwnProperty('isLoggedIn')) // true
 console.log(instaUser.hasOwnProperty('isLogged')) // false
+
+// Creating a course object with properties: coursname, price, and courseInstructor
+const course = {
+    coursname: "js",
+    price: 999,
+    courseInstructor: "Riz"
+}
+
+// Destructuring the course object to extract courseInstructor property
+const { courseInstructor } = course
+
+// Destructuring the course object and renaming courseInstructor property to instructor
+const { courseInstructor: instructor } = course
+
+// Logging the extracted courseInstructor property
+console.log(courseInstructor) // Output: Riz
+
+// Logging the renamed instructor property
+console.log(instructor) // Output: Riz
+
+
+// React Stuff (Example of a React functional component with destructuring props)
+// const navbar = ({company}) => {
+//     // The company prop is destructured from the props object
+// }
+// navbar({ company: "hitesh" }) // Calling the navbar function with an object having a company property
+
+
+// API Example (Example of a JSON object that could be returned by an API)
+// {
+//     "name": "Rizwan",
+//     "coursename": "js",
+//     "price": "free"
+// }
+
+// Example of an array containing multiple objects
+[
+    {}, // First object
+    {}, // Second object
+    {}  // Third object
+]
+
