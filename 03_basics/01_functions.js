@@ -64,3 +64,48 @@ console.log(loginUserMessage("riz")); // Output: riz just logged in.
 console.log(loginUserMessage()); // Output: user just logged in. (since default value is used)
 
 
+// Function definition using the rest operator (...)
+// The rest operator allows us to accept an indefinite number of arguments as an array
+function calcCartPrice(...num1) { 
+    return num1; // Returns the array of values passed as arguments
+}
+
+// Function invocation with multiple arguments
+console.log(calcCartPrice(200, 500, 1000)); // Output: [200, 500, 1000]
+
+// Define an object user with properties username and prices
+const user = {
+    username: "riz",
+    prices: "999"
+};
+
+// Function definition that accepts an object as a parameter
+function handleObject(anyobject) {
+    // Logs a string with values from the object
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+}
+
+// Function invocation with the user object
+handleObject(user); // Output: Username is riz and price is 999
+
+// Function invocation with a new object passed directly
+handleObject({
+    username: "Artisan",
+    price: 999
+}); // Output: Username is Artisan and price is 999
+
+// Define an array myNewArr
+const myNewArr = [200, 400, 600];
+
+// Function definition that accepts an array as a parameter
+function returnSecondArr(getArray) {
+    // Returns the second element of the array (index 1)
+    return getArray[1];
+}
+
+// Function invocation with myNewArr
+console.log(returnSecondArr(myNewArr)); // Output: 400
+
+// Function invocation with a new array passed directly
+console.log(returnSecondArr([1000, 2000, 4000])); // Output: 2000
+
