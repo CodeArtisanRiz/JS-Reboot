@@ -88,7 +88,7 @@ console.log(instructor) // Output: Riz
 // const navbar = ({company}) => {
 //     // The company prop is destructured from the props object
 // }
-// navbar({ company: "hitesh" }) // Calling the navbar function with an object having a company property
+// navbar({ company: "codeartisan" }) // Calling the navbar function with an object having a company property
 
 
 // API Example (Example of a JSON object that could be returned by an API)
