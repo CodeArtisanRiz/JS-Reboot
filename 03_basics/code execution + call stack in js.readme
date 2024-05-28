@@ -1,0 +1,58 @@
+# Code Execution
+Javascript Execution Context
+{} -> Global EC
+    this....^
+*this* has *window* object in browser*
+
+> Global Execution Context
+> Funtion Execution Context
+> Eval Execution Context [ not important ]
+
+{ } -> Memory *Creation Phase*
+    -> Execution Phase
+
+Code:
+        let val1 = 10
+        let val2 = 5
+        function addNum (num1, num2) {
+        let total = num1 +num2
+        return total
+        }
+        let result1 = addNum(val1, val2)
+        let result2 = addNum (10, 2)
+
+.>  Step 1: Global Execution/Environment
+.        this...^
+.   Step 2: Memory Phase
+.           val1 -> undefined
+.           val2 -> undefined
+.           addNum -> definition
+.           result1 -> undefined
+.           result2 -> undefined
+.   Step 3: Execution Phase
+.           val1 <- 10
+.           val2 <- 5
+.           addNum -> new Executional Context
+.                       new variable environment
+.                                   +
+.                       execution thread
+.           ------------      ----------
+.       Memory Phase            Execution Context
+.       val1 -> undefined           num1 -> 10
+.       val2 -> undefined           num2 -> 5
+.       total -> undefined          total -> 15
+.....................................^
+
+
+......Repeat....
+
+
+# Call Stack
+             >.......       ......>
+                |   .       .   |
+                |     three()   |  
+        >       |     two()     |    >
+                |     one()     |
+                |_______________|
+
+    Lifo
