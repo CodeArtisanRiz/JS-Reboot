@@ -25,4 +25,4 @@ if(Object.keys(emptyObj).length === 0){
     console.log("Object is empty.");
 } else{
     console.log("Object is not empty.")
-}
+} 
