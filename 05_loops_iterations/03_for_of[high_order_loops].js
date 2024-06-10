@@ -31,6 +31,10 @@ const myObj = {
     'game2': 'Spiderman'
 }
 
+// for (const [key, value] of myObj) {
+//     // console.log(key,":",value) // Won't work with object this way
+// }
+
 for (const [key, value] of Object.entries(myObj)) {
     console.log(key, ":", value); // Prints each key-value pair of the object
 }
