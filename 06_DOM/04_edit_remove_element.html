@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Reboot: Edit / Remove Element</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JS</li>
+    </ul>
+</body>
+<script>
+    // Function to add a language to the list
+    function addLang(langName) {
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addLang('Python');
+    addLang('Kotlin');
+
+    // Optimized function to add a language to the list
+    function addOptimisedLang(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptimisedLang("TypeScript");
+
+    // Function to edit a language in the list at a given position
+    function editLang(langName, pos) {
+        const sec_lang = document.querySelector(`li:nth-child(${pos})`);
+        sec_lang.innerHTML = "Mojo";
+        const newLi = document.createElement('li');
+        newLi.textContent = langName;
+        sec_lang.replaceWith(newLi);
+    }
+    editLang("Java", 1);
+
+    // Alternate method to edit the first language in the list
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = '<li>TypeScript</li>';
+
+    // Remove the last language in the list
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
+</script>
+</html>
