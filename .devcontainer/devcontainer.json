@@ -9,10 +9,10 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [8080],
+	 "forwardPorts": [8080],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install && npm install -g live-server",
+	 "postCreateCommand": "yarn install && npm install -g live-server",
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
